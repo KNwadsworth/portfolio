@@ -1,0 +1,542 @@
+
+
+/* Fonts  */
+/* 	https://www.google.com/fonts#UsePlace:use/Collection:Lato */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,900italic,700italic,400italic);
+
+/* 400 = Normal, 700 = bold */
+
+
+/* Colours 
+	Blue:         #47bdde
+    Orange:       #f98939
+	Green:        #859c4a
+	Yellow:       #c5a63e
+    Dark blue:    #133447
+	"Black":      #252525;
+*/
+
+
+
+/* ------------------------------------ General CSS  */
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body {
+    background: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5 , h6, label {
+	color: #252525;
+	margin-top: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+h1 {
+	font-size: 42px;
+	line-height: 1.125;
+	font-weight: 900;
+	letter-spacing: 2px;
+    color:#fff;
+    text-shadow: 0px 0px 25px #000000;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-size: 26px;
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+p {
+	color: #252525;
+	font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    font-weight: normal;
+}
+
+.btn {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 0;
+}
+
+.form-group {
+    padding-bottom: 10px;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.space{
+    padding-top:100px;
+    clear:both;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* ---------------------- Header  */
+
+/* ------------------------------------------ TITLE HEADER */
+
+.logo {
+	width: 40px;
+	display: inline-block;
+}
+
+.logo-container {
+    border-bottom: 0px;
+}
+
+.navbar {
+	text-align: center;
+    padding-top: 15px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+
+/* ------------END TITLE HEADER */
+
+header {
+    height:80px;
+}
+
+a {
+	color: #252525;
+}
+
+
+nav a {
+    font-size:16px;
+	font-weight: 400;
+    margin: 0px 27px;
+    padding: 0px 3px;
+    text-align:center;
+}
+
+nav .link {
+    background-color: #FFF; 
+    padding: 5px;
+}
+
+.link:hover, .link-current:hover{
+    color: yellowgreen;
+	text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.link:active{
+    color: yellowgreen;
+	text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.link-current {
+    color:yellowgreen;
+    text-decoration: none;
+    padding:5px;
+}
+
+/* All Sections*/
+
+.section {
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+
+/* --------------------------- portfolio */
+
+.portfolio .projects .project-img {
+	width: 100%;
+}
+
+.portfolio .projects-details {
+	background: white;
+	
+}
+
+.portfolio .projects-details p {
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	margin-bottom: 10px;
+    
+}
+
+.portfolio .projects-details a {
+    font-weight:700;
+    font-size: 18px;
+}
+
+.proj-container {
+    padding:13px;
+}
+
+
+/* ----------------------- PORTFOLIO */
+
+.overlay {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,.5);
+    overflow: hidden;
+}
+
+.projects:hover .overlay {
+  opacity: 1;
+}
+
+.projects{
+    position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text h2{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 0.2px;
+}
+
+.text h3{
+    font-size: 16px;
+    color: white;
+}
+
+/* ------------------------- EXAMPLE WORK PAGE */
+
+.content p{
+    font-size: 12px;
+    border-bottom: 1px solid #e6e9ed;
+}
+
+.project-information p {
+    font-size: 16px;
+    
+}
+
+.project-title h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.design {
+    padding-bottom: 40px;
+}
+
+.backbutton {
+    color: yellowgreen;
+    font-size: 16px;
+    pointer-events: auto;
+}
+
+.backbutton:hover{
+    color: yellowgreen;
+	text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+
+.proj-header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    color:#fff;
+    background-color: #fff;
+    z-index:100;
+    height:70px;
+}
+
+.project-title {
+  position: fixed;
+    top:80px;
+    right:50px;
+  padding-left: 25px;
+    pointer-events: none;
+}
+
+
+/* --------------------------HOME PAGE INFORMATION */
+
+.information .content {
+    padding-right: 40px;
+}
+
+.content .start {
+    font-size: 20px;
+}
+
+
+/* -------------------- CONTACT */
+
+.hide{
+    display: none;
+}
+
+.temp {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.temp a:hover {
+	color: yellowgreen;
+	text-decoration: none;
+    border-bottom: 1px solid;
+    /* font-weight: 700;*/
+}
+
+.temp a {
+    color: yellowgreen; 
+}
+
+
+.contact-information p {
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+
+.contact-information a:hover {
+	color: yellowgreen;
+	text-decoration: none;
+    border-bottom: 1px solid;
+    /* font-weight: 700;*/
+}
+
+.contact-information a {
+    color: yellowgreen; 
+}
+
+.contact {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.contact-img {
+    display: block; /*for the img inside your div */  
+margin-left: auto; 
+margin-right: auto; 
+}
+
+form {
+    padding-bottom: 80px;
+}
+
+/* -------------------- ABOUT */
+
+.about-information{
+    padding-bottom: 100px;
+}
+
+.aboutlink {
+    color:yellowgreen;
+    font-size: 18px;
+}
+.aboutlink:hover {
+	color: yellowgreen;
+	text-decoration: none;
+    border-bottom: 1px solid;
+    /* font-weight: 700;*/
+}
+
+.about-title h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about-title ul{
+    padding-left:30px;
+    padding-bottom: 20px;
+    font-size:18px;
+}
+
+/*  ---------------------------- Footer  */
+footer {    
+    text-align: center;
+    height:20px;
+    padding-top: 50px;
+    
+}
+
+footer .copyright{
+    border-top: 1px solid #e6e9ed;
+    color:#252525;
+    font-size: 14px;
+    padding-top:10px;
+}
+
+footer .container {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width:100%;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* screen-lg 1200px */
+@media (max-width: 1200px) {
+
+	
+
+}
+
+/* screen-md 992px */
+@media (max-width: 992px) {
+    .proj-header {
+    position: static;
+    top: 0;
+    color:#fff;
+    background-color: #fff;
+    z-index:100;
+    height:70px;
+}
+
+.project-title {
+  position: static;
+    top:auto;
+    right:auto;
+    pointer-events: auto;
+}
+    .backbutton{
+        visibility: hidden;
+    }
+    
+}
+
+/* screen-sm 768px */
+@media (max-width: 768px) {
+    
+
+    
+   
+    
+}
+
+/* screen-xs 480px */
+@media (max-width: 480px) {
+	/* ------------------------------------------ TITLE HEADER */
+
+    .logo {
+        width: 40px;
+        display: inline-block;
+    }
+
+    .logo-container {
+        border-bottom: 0px;
+    }
+
+    .navbar {
+        text-align: center;
+        padding: 10px 0px;
+        margin:0;
+    }
+
+    header {
+        height:40px;
+    }
+
+    nav a {
+        font-size:15px;
+        margin: 0px 0px;
+        padding: 0px 3px;
+    }
+    
+    .navigation .container{
+        width:100%;
+        padding:0px;
+        margin 0px;
+    }
+	
+    h1, h2,h3,h4, p {
+        text-align: center;
+    }
+    
+    
+}
+
+
+

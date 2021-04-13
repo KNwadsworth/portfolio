@@ -1,0 +1,292 @@
+
+
+/* Fonts  */
+/* 	https://www.google.com/fonts#UsePlace:use/Collection:Lato */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,900italic,700italic,400italic);
+
+/* 400 = Normal, 700 = bold */
+
+
+/* Colours 
+	Blue:         #47bdde
+    Orange:       #f98939
+	Green:        #859c4a
+	Yellow:       #c5a63e
+    Dark blue:    #133447
+	"Black":      #252525;
+*/
+
+
+
+/* ------------------------------------ General CSS  */
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body {
+    background: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+	color: #252525;
+	margin-top: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+h1 {
+	font-size: 42px;
+	line-height: 1.125;
+	font-weight: 900;
+	letter-spacing: 2px;
+    color:#fff;
+    text-shadow: 0px 0px 25px #000000;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-size: 26px;
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+p {
+	color: #252525;
+	font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    font-weight: normal;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.space{
+    padding-top:100px;
+    clear:both;
+}
+
+/* ------------------------------------------ TITLE HEADER */
+
+.logo {
+	width: 100px;
+	display: inline;
+}
+
+li .logo-container {
+    border-bottom: 0px;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    padding: 0px 45px;
+}
+
+.navbar {
+	text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 0px 15px; /*---- WHITE BACK */
+    background-color: #FFF;
+    margin: 0 4%; /*---- SPACE BETWEEN LINKS */
+}
+
+.bg {
+    background: url(../imgs/Tree.png); 
+    background-size: contain;
+    height: 100%;
+    overflow: hidden;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+}
+
+header {
+    height:140px;
+    padding-top:90px;
+}
+
+a {
+	color: #252525;
+}
+
+
+nav a {
+    font-size:18px;
+	font-weight: 400;
+    padding: 0px 80px;
+    text-align:center;
+}
+
+nav .link {
+    padding: 2px 3px; /*---- UNDERLINE LENGTH */
+}
+
+.link:hover{
+    color: yellowgreen;
+	text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.link-current {
+    color:yellowgreen;
+    text-decoration: none;
+}
+
+/* All Sections*/
+
+.section {
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+
+/*  ---------------------------- Footer  */
+footer {    
+    text-align: center;
+    height:20px;
+    padding-top: 50px;
+}
+
+footer .copyright{
+    border-top: 1px solid #e6e9ed;
+    color:#252525;
+    font-size: 14px;
+    padding-top:10px;
+}
+
+.home-footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width:100%;
+}
+
+.home-footer .copyright {
+    border-top: 0px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* screen-lg 1200px */
+@media (max-width: 1200px) {
+
+	
+
+}
+
+/* screen-md 992px */
+@media (max-width: 992px) {
+    
+}
+
+/* screen-sm 768px */
+@media (max-width: 768px) {
+    
+   
+    
+}
+
+/* screen-sm 630px */
+@media (max-width: 670px) {
+    
+    header {
+        position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+    }
+    
+    li {
+        width: 8em;
+        position: relative;
+        padding:110px;
+        font-size: 17px;
+    }
+    
+    .navbar ul li {
+        padding: 6px 15px;
+        margin-top:30px;
+    }
+    
+.logo-container {
+        display: none;
+        visibility: hidden;
+        padding:0px;
+    position: absolute;
+    height: 0; overflow: visible;
+    }
+    
+    .bg {
+        background-position: 50% 30%;
+        background-size:105%;
+        clear: both;
+    }
+    }
+
+/* screen-xs 480px */
+@media (max-width: 480px) {
+    .bg {
+        background-position: center 30%;
+        background-size:160%;
+    }
+	
+
+}
+
+
+
